@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salichat</title>
+    <style>
+        body {
+            font-family: system-ui;
+            margin: 0;
+            padding:36px0;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            place-content: center;
+            grid-template-rows: auto 1fr auto;
+        }
+        h1 {
+            color: #333;
+        }
+
+        :root{
+            color-scheme: light dark;
+        }
+
+        #chat
+        {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            width: 350px;
+            height: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salichat</h1>
+    <section id="chat">
+        <form id="form">
+            <input type="text" id="message" name="message" placeholder="Escriba un mensaje..." autocomplete="off"/>
+            <button>Enviar</button>
+        </form>
+</body>
+</html>
